@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- đầu tiên là đổi sang tiếng việt -->
+    <meta charset="UTF-8">
+    <title>Bài học về CSS</title>
+<!-- mở một thẻ style để đổi màu các thành phần có trong thẻ -->
+<!-- sử dụng một thẻ style trong html gọi là InTernal -->
+ 
+    <style>
+        h1 {
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+<!-- liên kết với css code bên ngoài -->
+<!-- ta có thể viết thẳng nếu hai file đều nằm trong một thư mục -->
+<link rel="stylesheet" href="main.css">  
+
+</head>
+<body>
+  <div>
+    <h1>Bạn biết gì về CSS</h1>
+    <p></p>
+    <p>Có kiến thức về CSS</p>
+    <ol>
+        <li>Internal</li>
+        <li>External</li>
+        <!-- in có nghĩa là trong, line là hàng là chúng ta có thể can thiệp
+        luôn bên trong hàng
+    nó giống với thuộc tính Attribute  -->
+     <!--chúng ta có thể dùng rất nhiều các thuộc tính của css 
+    bằng cách chúng ta dùng dấu ";"  -->
+        <li style="color : pink; font-size: 20px; ">Inline</li>  
+    </ol>
+  </div>  
+</body>
+</html>
