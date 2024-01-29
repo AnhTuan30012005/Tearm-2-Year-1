@@ -23,5 +23,6 @@ và mỗi lần bạn commit là nói sẽ lưu từng thời điểm, từng no
 - git log --oneline ngắn gọn hơn git log, nó dùng để tóm tắt các thay đổi mà bạn đã thay đổi trong git 
 dùng để chỉ các thời gian mà bạn đã thay đổi, và các -m mà bạn đã commit
 - git checkout + id của các lần bạn đã commit, nó xuất hiện đầu hàng bạn có thể tìm thấy nó.
-- {branch name} branch name là để trở về thực tại nếu bạn không muốn trở lại về ban đầu 
-vd: git checkout master
+- git checkout {branch name} branch name là để trở về thực tại nếu bạn không muốn trở lại về ban đầu 
+vd: git checkout master 
+- git checkout -b {branch name new} tạo ra một branch mới
