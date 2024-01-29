@@ -13,9 +13,15 @@ II. Các từ khóa Git mà bạn nên biết
 - git config --global user.name "My Name"
 - git config --global user.email "myemail@example.com"
 - git init 
-- git status
+- git status 
 - git add <file> or . or * to add all
-- git commit -m "<my note>"
-- git log
-- git log --oneline
-- git checkout {branch name} 
+- git reset <Không lưu file và đưa thư mục trở về ban đầu trước khi lưu>
+- git commit -m "<my note>" nó tượng trưng cho việc lưu lại từng thời điểm, mỗi thời điểm có thay đổi gì.
+<mỗi lần file có thay đổi, bạn phải git add lại từ đầu;
+và mỗi lần bạn commit là nói sẽ lưu từng thời điểm, từng note khác nhau, nên việc bạn dùng lại commmit cũ là sai hoàn toàn >
+- git log <coi những thời điểm mà chúng ta đã lưu file> <trong đó có bao gồm các id mà bạn đã commit>
+- git log --oneline ngắn gọn hơn git log, nó dùng để tóm tắt các thay đổi mà bạn đã thay đổi trong git 
+dùng để chỉ các thời gian mà bạn đã thay đổi, và các -m mà bạn đã commit
+- git checkout + id của các lần bạn đã commit, nó xuất hiện đầu hàng bạn có thể tìm thấy nó.
+- {branch name} branch name là để trở về thực tại nếu bạn không muốn trở lại về ban đầu 
+vd: git checkout master
