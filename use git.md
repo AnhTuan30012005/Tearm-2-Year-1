@@ -6,6 +6,11 @@ I. Các bước sử dụng Git hub mà bạn nên biết:
 - commit -m "Tên gợi nhớ"
 - git push hoặc git push -u origin main
 
+- git clone <tên thư mục github> 
+- cd: <trỏ đến thư mục đó>
+- ls để xem danh sách
+- code . (để tự động vào visuacode và nó sẽ xuất hiện code chúng ta cần)
+
 - Đồng bộ code trên Github và máy tính lại với nhau: (những trường hợp bạn có
 thay đổi thì bạn cần có cú pháp đồng bộ nó xuống)
 + II. Các từ khóa Git mà bạn nên biết
@@ -35,3 +40,6 @@ vd: bạn đang ở trên master và bạn muốn tổng hợp dev lại thì b�
 - git push <link kho github>  + <tên branch>
 - chúng ta có thể thay thế đường link dài ngoằng bằng một cái tên:
 cú pháp: git remote add <đặt tên> <đường link kho lưu trữ>
+- nếu trên kho lưu trữ chưa thấy thì hãy push vài lần haha
+
+
