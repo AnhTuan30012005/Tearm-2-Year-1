@@ -6,9 +6,9 @@ I. Các bước sử dụng Git hub mà bạn nên biết:
 - commit -m "Tên gợi nhớ"
 - git push hoặc git push -u origin main
 
-+ Đồng bộ code trên Github và máy tính lại với nhau: (những trường hợp bạn có
+- Đồng bộ code trên Github và máy tính lại với nhau: (những trường hợp bạn có
 thay đổi thì bạn cần có cú pháp đồng bộ nó xuống)
-II. Các từ khóa Git mà bạn nên biết
++ II. Các từ khóa Git mà bạn nên biết
 - git --version
 - git config --global user.name "My Name"
 - git config --global user.email "myemail@example.com"
@@ -30,4 +30,6 @@ vd: git checkout master ; <nó có thể đem ta qua từ branch này đến bra
 vd: bạn đang ở trên master và bạn muốn tổng hợp dev lại thì bạn làm theo cú pháp như trên 
 - git branch -d <tên branch hiện có> xóa các branch hiện có
 
-+ conflict: có nghĩa là xung đột 
++ conflict: có nghĩa là xung đột
+
+- git push <link kho github>  + <tên branch>
