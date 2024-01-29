@@ -34,4 +34,4 @@ vd: bạn đang ở trên master và bạn muốn tổng hợp dev lại thì b�
 
 - git push <link kho github>  + <tên branch>
 - chúng ta có thể thay thế đường link dài ngoằng bằng một cái tên:
-cú pháp: git remote add <đặt tên> <đường link kho>
+cú pháp: git remote add <đặt tên> <đường link kho lưu trữ>
