@@ -41,13 +41,13 @@ vd: bạn đang ở trên master và bạn muốn tổng hợp dev lại thì b�
 - git push <link kho github>  + <tên branch>
 - chúng ta có thể thay thế đường link dài ngoằng bằng một cái tên:
 cú pháp: 
-- git remote add origin <đường link kho lưu trữ>
+- git remote add <tên tùy thích> <đường link kho lưu trữ>
 git push origin <tên branch>
 - nếu trên kho lưu trữ chưa thấy thì hãy push cổ điển, là push theo cú pháp ban đầu
 
 
 - ! trường hợp tạo thêm một branch mới và bạn muốn push nó lên:
-git push -u origin <tên branch mới đó>
+git push -u origin <tên branch mới đó> giúp bạn push lên
 
 - git clone {repo url}
 
@@ -59,6 +59,7 @@ III. Lấy một brach có sẵn
 IV. Muốn merge các branch lại với nhau thì chúng ta dùng chức năng có tên là "Pull Request";
 làm theo các bước cho đến khi nào nó hiện nhiều màu tím là xong hahah.
 - sau đó chúng ta phải pull nó về để mà đồng bộ trên máy: git pull
+
 
 V. Cách để git không quan tâm tới một thư mục nào đó của ta
 - tạo một file có tên là 'git ignore'
