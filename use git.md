@@ -53,6 +53,7 @@ III. Lấy một brach có sẵn
 - chúng ta cũng có thể tạo một branch có sẵn trên github
 - git fetch origin <để kiểm tra branch mới trên git>
 - git checkout -b <tên branch trên git> origin/<tên branch trên git> kéo branch trên git xuống
+
 IV. Muốn merge các branch lại với nhau thì chúng ta dùng chức năng có tên là "Pull Request";
 làm theo các bước cho đến khi nào nó hiện nhiều màu tím là xong hahah.
 - sau đó chúng ta phải pull nó về để mà đồng bộ trên máy: git pull
