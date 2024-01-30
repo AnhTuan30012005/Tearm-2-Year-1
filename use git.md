@@ -13,7 +13,8 @@ I. Các bước sử dụng Git hub mà bạn nên biết:
 
 - Đồng bộ code trên Github và máy tính lại với nhau: (những trường hợp bạn có
 thay đổi thì bạn cần có cú pháp đồng bộ nó xuống)
-+ II. Các từ khóa Git mà bạn nên biết
+
+II. Các từ khóa Git mà bạn nên biết
 - git --version
 - git config --global user.name "My Name"
 - git config --global user.email "myemail@example.com"
@@ -49,6 +50,7 @@ git push origin <tên branch>
 git push -u origin <tên branch mới đó>
 
 - git clone {repo url}
+
 III. Lấy một brach có sẵn
 - chúng ta cũng có thể tạo một branch có sẵn trên github
 - git fetch origin <để kiểm tra branch mới trên git>
