@@ -70,3 +70,4 @@ VI. Chỉnh đoạn code của ai đó
 - nếu chúng ta muốn cho tác giả thấy đoạn commit đó, chúng ta hãy "Pull request"
 - Tạo merge và ấn gửi cho tác giả, chờ tác giả accept
 
+<!-- Đây là một bài học hơi khó nhằn đối với tôi nhưng mà tôi đã làm được haha -->
