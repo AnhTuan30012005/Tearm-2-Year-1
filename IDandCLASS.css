@@ -1,0 +1,11 @@
+/* các kiểu selec:
+1. Id là dùng '#' 
+2. class là dùng dấu '.'*/
+#first {
+    color: rgb(170, 24, 184);
+}
+
+.second {
+    color: goldenrod;
+    font-style: oblique;
+}
