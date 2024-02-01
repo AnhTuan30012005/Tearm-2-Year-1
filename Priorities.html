@@ -1,0 +1,59 @@
+<!-- Mức độ ưu tiên trong html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities</title>
+    <link rel="stylesheet" href="Priorities.css">
+    <style>
+        /* thẻ heading của id  */
+        /* nếu một thẻ được gọi lại nhiều lần thì nó sẽ thực hiện lệnh lần mới nhất */
+        /* chúng ta có thể selec nhiều thẻ cùng một lúc, và số điểm trong selec sẽ tăng lên  */
+        /* Example: (nó chỉ selec ai có hai yếu tố đó thôi)*/
+        /* #heading-id.heading-class {
+            color: black;
+        } */
+        
+        #heading-id {
+            color: bisque;
+        }
+
+        /* thẻ heading của class */
+        .heading-class {
+            color: aliceblue;
+
+        }
+               
+        /* cái này gọi là tag - gọi thăng thẻ */
+        h1 {
+            color: blueviolet;
+        }
+       
+    </style>
+</head>
+<body> 
+    <!-- kiểu style trong thẻ gọi là kiểu Inline( có nghĩa là làm việc với chính thẻ luôn) -->
+    <h1  ;" id="heading-id" class="heading-class" >Priorities là gì ?</h1>
+
+    <ol>
+        <!-- 1.Giữa hai cái này không có sự ưu tiên, cái nào xuất hiện mới hơn thì lấy cái đó  -->
+        <li>Internal and External</li> 
+        <!-- 2. Từ hàng Inline đến tag mức độ ưu tiên dựa vào điểm của nó -->
+        <li>Inline - 1000</li>
+        <li>#id - 100</li>
+        <li>.class - 10</li>
+        <li>tag -1</li>
+
+        <li>Equal specificity ?</li>
+        <!-- Cái này là cái chung
+        dùng selector là * có nghĩa là tất cả mọi thứ trong thẻ sẽ thay đổi hết 
+        nó là 0 điểm và tất các selector khác có thể thay thế nó-->
+        <li>Universal seloctor and  inherrited</li>
+        <li>!Important</li>
+        <!-- Muốn thắng importan mình phải đem nó vào một cái khác để xét điểm
+        vd <h1 !important style = "blue"></h1>
+        thì khi này cái này sẽ thắng được cái important bên css -->
+    </ol>
+</body>
+</html>

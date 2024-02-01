@@ -1,0 +1,11 @@
+/* Mức độ ưu tiên trong html */
+h1 {
+    color: rebeccapurple ;
+}
+* {
+    color: red;
+}
+/* hoặc: */
+li {
+    color: blueviolet;
+}
