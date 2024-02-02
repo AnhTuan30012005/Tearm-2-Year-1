@@ -1,0 +1,16 @@
+/* bài học về biến */
+/* khai báo toàn cục global  dưới dạng root*/
+:root {
+    --text-color: rgb(166, 34, 146);
+}
+h1 {
+/* còn đây là khai báo local: có nghĩa là khai báo địa phương */
+    --my-color: blue;
+    color: var(--my-color);
+}
+h2 {
+    color: var(--text-color);
+}
+h3 {
+    color: var(--text-color);
+}
