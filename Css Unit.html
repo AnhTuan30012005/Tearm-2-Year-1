@@ -1,0 +1,57 @@
+<!-- đơn vị trong css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Unit</title>
+    
+    <style>
+/* 1 rem = 30px được định sẵn từ selechtml */
+        html {
+            font-size: 100%;
+        } 
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        #box {
+            background-color: grey;
+            width: 100%;
+            height: 120px;
+        }
+        /* vw - view width - tỷ lệ phần của độ rộng;
+         vh - view height - tỷ lệ phần trăm của độ dài
+         và tất cả nó sẽ phụ thuộc vào độ to nhỏ của trang web hiển thị*/
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div>
+        <h1>CSS Units ?</h1>
+        <h2>1.Absolute units ?</h2>
+        <ul>
+            <li>px</li>
+            <li>pt</li>
+            <li>cm</li>
+            <li>mm</li>
+            <li>inch</li>
+            <li>pc</li>
+        </ul>
+        <h2>2.Relative units ?</h2>
+        <ul>
+            <!-- % được gọi là  giá trị tương đối, khi chúng ta thay đổi kich thước trang web thì nói  cx sẽ bị thay đôi (to lên hoặc nhỏ lại) -->
+            <li>%</li>
+            <li>rem</li>
+            <li>em</li>
+            <li>vw</li>
+            <li>vmin</li>
+            <li style="color: blueviolet;"><i>vmax</i></li>
+            <li>ex</li>
+            <li>ch</li>
+        </ul>
+
+    </div>
+</body>
+</html>
