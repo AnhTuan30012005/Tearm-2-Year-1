@@ -1,0 +1,35 @@
+/* thuộc tính padding trong css */
+/* thuộc tính đó nó nằm bao quanh khối lập phương mà bạn tạo ra
+nhiệm vụ chúng ta là thay đổi nó
+vd; thêm nó ta ra hoặc nhỏ lại */
+        .box {
+            width: 60px;
+            height: 60px;
+            /* màu chữ bên trong box */
+            color: #ffffff;
+            /* căn chỉnh */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1{
+            background-color: blue;
+            /* cách viết tắt các thuộc tính padding trong css*/
+            /* thứ tự theo  chiều kim đồng hồ từ top đến left theo chiều kim đồng hồ
+            - Nếu có một giá trị thì nó sẽ hiểu là: padding cả 4  hướng
+            - Nếu có hai giá trị thì giá trị đầu tiên sẽ là top và bottom còn lại là hai bên 
+            - Nếu có ba giá trị thì: Giá trị đầu tiên sẽ là top, bottom and (right and left)  */
+            padding: 10px 11px 12px 13px;
+        }
+        .box2 {
+            background-color: green;
+        }
+        .box3 {
+            background-color: rgb(152, 28, 28) ;
+            /* ta thêm thuộc tính padding vào box3 : */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
