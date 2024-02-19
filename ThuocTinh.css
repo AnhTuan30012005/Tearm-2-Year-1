@@ -32,3 +32,13 @@ vd; thêm nó ta ra hoặc nhỏ lại */
             padding-left: 10px;
             padding-right: 10px;
         }
+/* Thuộc tính Border (là thuộc tính bao quanh thuộc tính Padding) */
+/* Nó được ký hiệu trong element là Dấu liền nối biểu hiện sự bao quanh ôm trọn
+thuộc tính padding cũng như các mục trong thuộc tính padding */
+        .box4 {
+            background-color: aqua;
+            padding: 10px;
+            border-width: 20px;
+            border-style: solid;
+            border-color: blueviolet;
+        }
