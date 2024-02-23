@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1 {
+            color: rgb(0, 91, 211);
+        }
+        .forms {
+            position: relative;
+            height: 300px;
+        }
+
+        .name {
+            width: 30%;
+        }
+
+        .option {
+            width: 30%;
+            margin: 10px 10px;
+        }
+
+        .right {
+            position: absolute;
+            width: 90%;
+            top: 7%;
+            margin-left: 13%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HỎI ĐÁP TƯ VẤN TUYỂN SINH</h1>
+    <hr>
+
+    <fieldset class="forms">
+        <legend>Liên hệ hỏi đáp tư vấn tuyển sinh</legend>
+        <div class="left">
+            <p class="name">Họ và tên</p> 
+            <p class="name">Giới tính</p>
+            <p class="name">Email</p>
+            <p class="name">Di động</p>
+            <p class="name">Ngành học bạn quan tâm</p>
+            <p class="name">Câu hỏi của bạn là gì</p>
+        </div>
+
+        <div class="right">
+            <div class="option" ><input class="input" type="text"></div>
+
+            <div class="option" >         
+                <input class="input" type="radio" name="sex">Nam
+                <input class="input" type="radio" name="sex">Nữ
+            </div>
+
+            <div class="option" >              <input class="input" type="text"></div>
+            <div class="option" >              <input class="input" type="text"></div>
+
+            <div class="option">      
+                <select class="input" id="drop_list"> 
+                    <option value="1" selected="selected">Công nghệ thông tin</option>
+                </select>
+            </div>
+            <div class="option" > <textarea class="input" ></textarea></div>
+            <div class="option" ><input class="input" type="checkbox"> Tôi xác nhận thông tin trên là đúng</div>
+            <div class="option" ><button>Gửi câu hỏi</button> <button>Xóa form</button></div>
+        </div>
+    
+    </fieldset>
+</body>
+</html>
