@@ -1,0 +1,27 @@
+ p {
+     color: #333333;
+ }
+
+ .div {
+     color: #f00;
+ }
+
+ /*có thể dùng dấu '*' để gọi tất cả mọi thứ có trong trang web */
+ .h2 {
+     color: blueviolet;
+ }
+
+ .div {
+     background-color: #F8F8F8;
+ }
+
+
+ h2,
+ p {
+     font-family: Arial;
+ }
+
+ /* gọi riêng trong thẻ a */
+ a[target="_blank"] {
+     color: red;
+ }
