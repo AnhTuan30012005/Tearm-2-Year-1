@@ -30,17 +30,17 @@ int main()
     cout << "Độ tuổi của bồ nhí sau khi được thay đổi là: " << (*bo_nhi).tuoi << endl;
 
     // thứ 3
-    bo_nhi = bo_nhi + 1;
+    bo_nhi = &thuy;
 
     cout << "Đây là số đo vòng 1 của em nó: " << (*bo_nhi).vong_mot << endl;
 
     // thứ 4
     bo_nhi = nullptr;
     cout << "Địa chỉ của bồ nhí là: " << &bo_nhi << endl;
-
+    cout << "Giá trị của bồ nhí là " << bo_nhi << endl;
     // thứ 5 TĂNG GIẢM ĐỊA CHỈ
 
-    bo_nhi = bo_nhi + 1;
+    bo_nhi = &linh;
     cout << "CHiều cao của em Linh là: " << (*bo_nhi).chieu_cao << endl;
 
     return 0;
