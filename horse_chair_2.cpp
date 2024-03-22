@@ -1,50 +1,74 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-void timPhanTuYenNgua(const vector<vector<int>>& mang) {
-    vector<pair<int, int>> mangYenNgua;
-
-    // Duyệt qua từng hàng
-    for (int i = 0; i < mang.size(); i++) {
-        // Tìm phần tử nhỏ nhất trong hàng
-        int minHang = mang[i][0];
-        int cotMinHang = 0;
-        for (int j = 1; j < mang[i].size(); j++) {
-            if (mang[i][j] < minHang) {
-                minHang = mang[i][j];
-                cotMinHang = j;
-            }
+int main()
+{
+    // Khai báo số hàng và số cột
+    int n, m;
+    cin >> n >> m;
+    
+    // Khai báo mảng
+    int mang[n][m];
+    
+    // Nhập vào mảng
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cin >> mang[i][j];
         }
+    }
+    
+    // Vector để lưu các phần tử yên ngựa
+    vector<pair<int, int>> saddlePoints;
 
-        // Kiểm tra xem phần tử nhỏ nhất có là phần tử lớn nhất trong cột không
-        bool cotYenNgua = true;
-        for (int k = 0; k < mang.size(); k++) {
-            if (mang[k][cotMinHang] > minHang) {
-                cotYenNgua = false;
-                break;
+    // Bắt đầu điều kiện
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            int current_element = mang[i][j];
+            bool is_saddle_point = true;
+
+            // Kiểm tra xem current_element có là phần tử nhỏ nhất trong hàng không
+            for (int k = 0; k < m; k++)
+            {
+                if (mang[i][k] < current_element)
+                {
+                    is_saddle_point = false;
+                    break;
+                }
             }
-        }
 
-        // Nếu phần tử nhỏ nhất là phần tử lớn nhất trong cột, thêm vào danh sách phần tử yên ngựa
-        if (cotYenNgua) {
-            mangYenNgua.push_back(make_pair(i, cotMinHang));
+            // Kiểm tra xem current_element có là phần tử lớn nhất trong cột không
+            if (is_saddle_point)
+            {
+                for (int k = 0; k < n; k++)
+                {
+                    if (mang[k][j] > current_element)
+                    {
+                        is_saddle_point = false;
+                        break;
+                    }
+                }
+            }
+
+            // Nếu current_element là phần tử yên ngựa, thêm vào vector
+            if (is_saddle_point)
+            {
+                saddlePoints.push_back(make_pair(i, j));
+            }
         }
     }
 
-    // In các phần tử yên ngựa
-    for (auto phantu : mangYenNgua) {
-        cout << "Phan tu yen ngua tai hang " << phantu.first << ", cot " << phantu.second << ": " << mang[phantu.first][phantu.second] << endl;
+    // In ra tọa độ của các phần tử yên ngựa
+    cout << "Cac phan tu yen ngua la:" << endl;
+    for (auto &point : saddlePoints)
+    {
+        cout << "(" << point.first + 1 << "," << point.second + 1 << "); ";
     }
-}
-
-int main() {
-    vector<vector<int>> mang = {
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
-
-    timPhanTuYenNgua(mang);
+    cout << endl;
 
     return 0;
 }
