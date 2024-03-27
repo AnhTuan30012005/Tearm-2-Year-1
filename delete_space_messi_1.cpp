@@ -11,9 +11,12 @@ int main()
     int cuoi = 0;
     int i = 0;
     // xóa ký tự trắng ở đầu
-    while (isspace(name[i]))
+    for(char c : name)
     {
-        dem++;
+        if(c == ' '){dem++;}
+        else break;
+
+        
     }
     name.erase(0, dem);
     // xóa ký tự trắng ở cuối

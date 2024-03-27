@@ -1,53 +1,45 @@
 #include <bits/stdc++.h>
 using namespace std;
-//hàm xóa ký tự trắng đầu - thừa - cuối 
-void delete_char(string &name)
-{
-    // biến đem số ký tự cần xóa
-    int dem = 0;
-    int cuoi = 0;
-    int i = 0;
-    // xóa ký tự trắng ở đầu
-    for (char c : name)
-    {
-        if (c == ' ')
-        {
-            dem++;
-        }
-        else
-            break;
-    }
-    name.erase(0, dem);
-    // xóa ký tự trắng ở cuối
-    for (int j = name.length() - 1; j >= 0; j--)
-    {
-        if (!isspace(name[j]))
-            break;
-        cuoi++;
-    }
-    name.erase(name.length() - cuoi, cuoi);
-    // xóa ký tự trắng ở giữa
-    for (int k = 1; k < name.length(); k++)
-    {
-        if (isspace(name[k]) && isspace(name[k - 1]))
-        {
-            name.erase(k, 1);
-            k--;
-        }
-    }
-    cout << "Số khoảng trắng là: " << dem << "  "
-         << "Và đây là kết quả: " << name << endl;
-    cout << "Số khoảng trắng ở cuối là: " << cuoi << " "
-         << "Và đây là kết quả: "
-         << "'" << name << "'" << endl;
-    cout << "Chuối thuần hóa là: "
-         << "'" << name << "'" << endl;
-}
 int main()
 {
-    string kytu;
-    getline(cin , kytu);
-    delete_char(kytu);
+    // khai báo map
+    map < int , int > mp;
+
+    mp[100] = 100;
+    mp[200] = 200;
+
+    mp.insert({ 300 , 300 });
+    mp.insert({ 400 , 400 });
+
+    cout << "Cách cout thứ nhất: " << endl;
+    for( pair< int , int > c : mp){
+        cout << "Key: " << c.first <<" " << "Value: "<< c.second << endl;
+    } cout << endl;
+
+    cout << "Cách cout thứ hai: " << endl;
+    for( auto c : mp)
+    {
+        cout << "Key: " << c.first <<" " << "Value: "<< c.second << endl;
+    }cout << endl;
     
-    cout << "Và đây là ký tự được thay dổi: "<< kytu << endl;
+    cout << "Cách cout bằng iterator" << endl;
+    for( map< int , int >::iterator pp = mp.begin() ; pp != mp.end() ; pp++ )
+    {
+        cout <<"Key: "<< (*pp).first << " " << "Value: " << (*pp).second << endl;
+    }
+    // thử tìm kiếm coi có key 100 xuất hiện trong map không 
+    if( mp.count(100) != 0){
+        cout << "Found " << endl;
+    }
+    else cout << "Not Found" << endl;
+
+    // xóa một map 
+    mp.erase(100);
+
+    for( map<int , int >::iterator it = mp.begin() ; it != mp.end() ; it++){
+        cout << "Key: " << (*it).first << " " << "Value: " << (*it).second << endl;
+    }
+
+
+    return 0;
 }

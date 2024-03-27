@@ -1,3 +1,4 @@
+// bài toán chuyển vị 
 #include <bits/stdc++.h>
 using namespace std;
 int main()
